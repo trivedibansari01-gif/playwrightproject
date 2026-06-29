@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {"test": "playwright test",
-              "reg": "playwright test --grep @reg",
-              "san": "playwright test --grep @san",
-              "regression": "playwright test --grep @regression",
-              "smoke": "playwright test --grep @smoke",
-              "functional": "playwright test --grep @functional"
+  "scripts": {"test:reg": "npx playwright test tags.spec.js --grep @reg",
+              "test:san": "npx playwright test tags.spec.js --grep @san",
+              "test:regression": "npx playwright test tags.spec.js--grep @regression",
+              "test:smoke": "npx playwright test tags.spec.js --grep @smoke",
+              "test:functional": "npx playwright test tags.spec.js --grep @functional",
+              "test:all": "npx playwright test tags.spec.js"
              },
   "keywords": [],
   "author": "",
