@@ -2,7 +2,7 @@ import{test, expect} from "@playwright/test";
 
 test("double click @reg" , async({page})=>{
 
-    // double click method
+
     await page.goto("https://testautomationpractice.blogspot.com/");
     await page.getByRole("button",{name:"Copy Text"}).dblclick();
     await page.waitForTimeout(10000);
@@ -15,7 +15,7 @@ test("screenshot 1 @san",async({page})=>{
     
 })
 
-test("drag and drop @reg", async({page})=>{
+test("drag and drop @regression", async({page})=>{
 
     // drag and drop
     //syntax= await.page.dragANdDrop(source,target)
